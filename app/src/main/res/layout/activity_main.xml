@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image_ruslan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/rus"
+        android:padding="@dimen/activity_vertical_margin"
+        android:onClick="handleSpinning"/>
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/a_top_left"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:src="@drawable/ic_favorite_black_24dp"
+
+        />
+    <ImageView
+        android:rotation="180"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/a_bottom_right"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:src="@drawable/ic_favorite_black_24dp"
+
+        />
+
+    <TextView
+        android:id="@+id/a_top_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:text="A"
+        android:textColor="#D50000"
+        android:textSize="@dimen/text_size"
+        app:fontFamily="serif-monospace" />
+
+    <TextView
+        android:id="@+id/a_bottom_right"
+        android:rotation="180"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/text_size"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#D50000"
+        app:fontFamily="serif-monospace"
+        />
+    <TextView
+        android:id="@+id/speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="30sp"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#D50000"
+        app:fontFamily="serif-monospace"
+        />
+    <TextView
+        android:id="@+id/speed_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_toRightOf="@+id/speed"
+        android:layout_alignParentBottom="true"
+        android:textSize="30sp"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#D50000"
+        app:fontFamily="serif-monospace"
+        />
+</RelativeLayout>
